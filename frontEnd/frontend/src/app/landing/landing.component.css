@@ -1,0 +1,31 @@
+body {
+  font-family: Lato;
+  color: #212121;
+  background-color: #152238;
+  margin:20px;
+}
+
+h1{
+  color: #ffa500;
+}
+
+h3{
+  color: #ffa500;
+}
+
+.mat-card {
+  background-image: url("poly.jpg");
+  text-align: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  width:750px;
+  height: 500px;
+}
+
+.mat-button{
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #1D4962;
+  color: #ffa500;
+}
+

@@ -1,0 +1,9 @@
+<mat-toolbar >
+  <!--<h1 routerLink="/"> {{title}}  </h1>-->
+  <img routerLink="/" src="assets/logo.png"/>
+  <button mat-button color = #1D4962 routerLink="/profile">Profile</button>
+  <button mat-button color = #1D4962 routerLink="/findTeams" *ngIf="userService.currentUser.team == null">Find teams</button>
+  <button mat-button color = #1D4962 routerLink="/team" *ngIf="userService.currentUser.team != null">Team</button>
+</mat-toolbar>
+
+

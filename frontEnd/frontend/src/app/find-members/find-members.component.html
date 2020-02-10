@@ -1,0 +1,13 @@
+
+
+<mat-card-header><h1>Find Team Members</h1></mat-card-header>
+<mat-card *ngFor="let  user of userService.users " >
+
+  <h2>{{user.userName}}</h2>
+  <h3>Strength And Weaknesses</h3>
+  <h4>{{user.roll}}</h4>
+  <button *ngIf="userService.isTeamOwner()" mat-button>Invite!</button>
+  <button mat-button>Connect!</button>
+
+</mat-card>
+

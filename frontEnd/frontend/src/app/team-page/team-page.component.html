@@ -1,0 +1,18 @@
+<mat-card>
+  <h1>Teams In</h1>
+  <button mat-button *ngFor="let team of createTeamsButton()" (click)="teamButtonClick(team)">{{team.teamName}}</button>
+</mat-card>
+
+<mat-card>
+  <h1>{{teamService.currentTeam.teamName}}</h1>
+  <h2>team description: </h2> {{teamService.currentTeam.description}} <p></p>
+  <h3>number of members : </h3> {{teamService.currentTeam.numberOfMembers}} <p></p>
+  <h3>Looking for members: </h3><p style="display: inline" *ngIf="teamService.currentTeam.lookForMembers == true"> Yes </p> <p style="display: inline" *ngIf="teamService.currentTeam.lookForMembers != true"> No </p> <p></p>
+  <h3>team head: </h3> {{getTeamOwnerName(teamService.currentTeam)}} <p></p>
+  <button mat-button *ngIf="userService.currentUser.id == teamService.currentTeam.owner" routerLink="/findTeamMembers"> Add Team Members</button><p></p>
+</mat-card>
+
+<div>
+  <button style="margin-right: 475px" mat-button routerLink="/findTeams"> Find A Team To Join</button>
+  <button style="margin-left: -7px" mat-button routerLink="/createTeam">Create Team!</button>
+</div>

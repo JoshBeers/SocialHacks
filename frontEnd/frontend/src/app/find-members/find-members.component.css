@@ -1,0 +1,48 @@
+h1{
+  color: #ffa500;
+  text-align: center;
+}
+
+h2{
+  color: #ffa500;
+}
+
+h3{
+  color: aliceblue;
+}
+
+h4{
+  color: aliceblue;
+}
+
+.mat-button:hover{
+  background-color: #367D81;
+}
+
+.mat-button{
+  background-color: #BF513F;
+  color: aliceblue;
+  float: bottom;
+  margin: auto;
+  margin-right: 5px;
+  margin-left:5px;
+}
+
+.mat-card{
+  background-color: #1D4962;
+  text-align: center;
+  margin: 20px;
+  width:325px;
+  height: fit-content;
+  alignment: center;
+  float: left;
+}
+
+.mat-card-header{
+  background-color: #1D4962;
+  text-align: center;
+  margin: 20px;
+  height: 75px;
+  color: aliceblue;
+  alignment: center;
+}

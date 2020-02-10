@@ -1,0 +1,12 @@
+<h1 style="text-align: center">Teams Avalible</h1>
+<mat-card *ngFor="let team of teamService.teams">
+  <h2>{{team.teamName}}</h2>
+  <h3>Description:</h3> {{team.description}}<p></p>
+  <h3 style="display: inline">Number of people currently in the team: </h3> {{team.numberOfMembers}}<p></p>
+  <h3 style="display: inline">Is accepting request: </h3>
+    <p style="display: inline" *ngIf="team.lookForMembers"> Yes! </p>
+  <p style="display: inline" *ngIf="!team.lookForMembers"> No :( </p>
+  <p></p>
+  <button mat-button *ngIf="team.lookForMembers && this.checkIfInTeam(team) == true ">Request to Join</button>
+</mat-card>
+

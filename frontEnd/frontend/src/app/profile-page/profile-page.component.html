@@ -1,0 +1,17 @@
+<mat-card id="mainCard">
+
+    <h1>
+      {{userService.currentUser.userName}}
+    </h1>
+
+
+    <h3 >Hacks Attending:</h3>
+    <h4 *ngFor="let hack of creatHacksList()">{{hack.name}}</h4>
+
+    <h3>Roll: </h3>
+    <h4 id="roll">{{userService.currentUser.roll}}</h4>
+
+    <h3 >Teams: </h3>
+    <h4  *ngFor="let team of createTeamsButton()">{{team.teamName}}</h4>
+
+</mat-card>

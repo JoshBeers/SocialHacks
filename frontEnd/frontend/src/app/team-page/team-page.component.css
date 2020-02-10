@@ -1,0 +1,32 @@
+h1{
+  color: #ffa500;
+}
+h2{
+  color: aliceblue;
+}
+
+.mat-button:hover{
+  background-color: #367D81;
+}
+
+.mat-button{
+  background-color: #BF513F;
+  color: aliceblue;
+  margin: auto;
+}
+
+.mat-card{
+  background-color: #1D4962;
+  text-align: center;
+  margin: auto;
+  width: 750px;
+  height: fit-content;
+  color: aliceblue;
+  alignment: center;
+  margin-bottom: 10px;
+}
+div{
+  margin: auto;
+  width: 750px;
+}
+

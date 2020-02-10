@@ -1,0 +1,12 @@
+<mat-card>
+  <h1>Create Team</h1>
+  Team Name : <input [(ngModel)]="team.teamName"  style="display:inline;"   /><p></p>
+
+  <p>Team Description :</p> <textarea [(ngModel)]="team.description" style="margin: auto; width: 75%; resize: none; height: 100px"></textarea><p></p>
+
+  Number Of People : <input [(ngModel)]="team.numberOfMembers" type="number" style="display:inline;" /><p></p>
+
+  <button mat-button (click)="submit()">Submit!</button>
+  <button mat-button (click)="onBackClick()" >Back! </button>
+
+</mat-card>

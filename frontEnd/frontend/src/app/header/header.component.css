@@ -1,0 +1,21 @@
+mat-toolbar {
+  margin-bottom: 25px;
+  background-color: #1D4962;
+  color: #ffa500;
+}
+button{
+  margin: 10px;
+  alignment: left;
+}
+.mat-button:hover{
+  background-color: #367D81;
+}
+
+img{
+  height: 65px;
+  width: 165px;
+  outline: none;
+}
+
+
+
